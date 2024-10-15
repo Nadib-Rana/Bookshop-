@@ -1,0 +1,498 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* Navbar */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/***logo-name-scerch*****/
+.listyles{
+    list-style: none;
+    align-items: center;
+}
+
+.logo-name-scerch ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#logo{
+
+    width: 40px;
+    height: 40px;
+    top: -2px;
+
+} 
+.logo-MEdu{
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 15px;
+    position: relative;
+    top: -4px;
+}
+
+/* ----------------------------Search---------------------------------------- */
+
+
+
+#search {
+    width: 100%;
+    height: auto;
+    background-color: rgb(230, 239, 237);
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+     animation-name: pulse;
+}
+
+
+#search:hover {
+    background-color: rgb(49, 196, 120);
+    transform: scale(1.02);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+/* Dynamic Book Showcase Banner */
+.dynamic-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffecb3;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-info {
+    width: 100%;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.book-title {
+    font-size: 3rem;
+    color: #333;
+    align-items: center;
+
+}
+
+.book-desc {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.cta-button {
+    background-color: #ca2617;
+    border-radius: 20px;
+    color: #c0d4c1;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #06a944;
+    transform: scale(1.1); /* Zoom in */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    border-radius: 20px;
+    color:#e7e3e2;
+}
+
+.cta-button:active {
+    transform: scale(0.95); /* Zoom out when clicked */
+}
+
+
+.book-carousel {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-item {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    transform: rotate(-10deg);
+    transition: transform 0.5s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.1);
+}
+
+/* Animated Categories */
+.categories {
+    padding: 2rem;
+    text-align: center;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.category {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.category p {
+    font-size: 1.2rem;
+    z-index: 2;
+    color: white;
+}
+
+.category .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.category:hover .overlay {
+    opacity: 1;
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
+
+.fiction { background-image: url('/bacground-img/fiction.jpeg'); background-size: cover; }
+.non-fiction { background-image: url('/bacground-img/non-fiction.jpeg'); background-size: cover; }
+.mystery { background-image: url('/bacground-img/mystery.jpeg'); background-size: cover; }
+.sci-fi { background-image: url('/bacground-img/science-fiction.jpeg'); background-size: cover; }
+
+/* Parallax Effect for Book Listings */
+.parallax {
+    background-image: url('parallax-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 3rem 0;
+    color: white;
+}
+
+.book-listings {
+    text-align: center;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.book-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+/* ************************************************************************** */
+
+/* New Arrivals Section */
+.new-arrivals-section {
+    background-color: #fffaf0;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.new-arrivals-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.new-arrivals-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.new-arrivals-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+}
+
+.new-arrivals-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.new-arrival-item {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.new-arrival-item:hover {
+    transform: translateY(-5px);
+}
+
+.new-arrival-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.new-arrival-item h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.new-arrival-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.view-all-new-arrivals {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-new-arrivals:hover {
+    background-color: #e04b45;
+}
+
+
+.new-arrival-cover{
+    transform-origin: left; /* Make the transformation start from the left side */
+    transition: transform 0.5s ease; /* Smooth transition effect */
+}
+.new-arrival-cover:hover {
+    transform: perspective(300px) rotateY(-16deg) scale(0.88); /* 3D "open door" effect */
+    box-shadow: 20px 0px 10px rgba(60, 218, 21, 0.3); /* Shadow to the left */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .new-arrivals-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+
+
+
+/* ***************************************************************************************** */
+.most-selling-books {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-cover {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.book-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    color: #333;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+    
+}
+
+.view-btn {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+.book-card:hover .view-btn {
+    display: block;
+}
+
+.book-card:hover .book-name {
+    opacity: 0; /* Hide the book name by changing its opacity */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********************************************************************************************** */
+#footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section .h2tag{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li,
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #ccc;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ccc;
+}

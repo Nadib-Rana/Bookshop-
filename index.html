@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Book Sales Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+   <!-- header.html -->
+<link rel="stylesheet" href="header.css">
+<header>
+    <section style="width: 100%;height: 40px;background-color: green;" class="logo-name-scerch">
+        <ul>
+          <li class="listyles" id="logo"><img class="logo-MEdu" src="logo/image.png" alt="logo"></li>
+          <li class="listyles" id="search-box">
+            <input type="text" placeholder="search..." class="search" id="search" />
+          </li>
+          <li class="listyles" class="name" style="padding-right: 15px">mEdu</li>
+        </ul>
+      </section>
+</header>
+
+
+    <!-- Dynamic Book Showcase Banner -->
+    <section class="dynamic-banner">
+        <div class="book-info">
+            <h1 class="book-title">Discover New Worlds</h1>
+            <p class="book-desc">Unravel mysteries, explore fantasy, and dive into captivating stories.</p>
+            <button class="cta-button">Browse Collection</button>
+        </div>
+        <div class="book-carousel">
+            <img src="/cover-page-book/book1.jpg" alt="Featured Book 1" class="carousel-item">
+            <img src="cover-page-book/book2.jpeg" alt="Featured Book 2" class="carousel-item">
+            <img src="cover-page-book/book3.jpg" alt="Featured Book 3" class="carousel-item">
+        </div>
+    </section>
+
+    <!-- Animated Book Categories -->
+    <section class="categories">
+        <h2>Explore by Genre</h2>
+        <div class="category-container">
+            <div class="category fiction">
+                <div class="overlay"></div>
+                <p><b>Fiction</b></p>
+            </div>
+            <div class="category non-fiction">
+                <div class="overlay"></div>
+                <p><b>Non-Fiction</b></p>
+            </div>
+            <div class="category mystery">
+                <div class="overlay"></div>
+                <p><b>Mystery</b></p>
+            </div>
+            <div class="category sci-fi">
+                <div class="overlay"></div>
+                <p><b>Science Fiction</b></p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- New Arrivals Section -->
+<section class="new-arrivals-section">
+    <div class="new-arrivals-container">
+        <h2>New Arrivals</h2>
+        <p>Discover the latest books added to our collection. Fresh stories, just for you!</p>
+        <div class="new-arrivals-grid">
+            <div class="new-arrival-item">
+                <img class="new-arrival-cover" src="new-arrivals/new-arrival1.png" alt="New Arrival Book 1">
+                <h3>The Road of Mystery</h3>
+                <p>$15.99</p>
+            </div>
+            <div class="new-arrival-item">
+                <img class="new-arrival-cover" src="/new-arrivals/new-arrival2.png" alt="New Arrival Book 2">
+                <h3>Dream Town </h3>
+                <p>$18.99</p>
+            </div>
+            <div class="new-arrival-item">
+                <img class="new-arrival-cover" src="new-arrivals/new-arrival3(javascript).jpeg" alt="New Arrival Book 3">
+                <h3>Power of javascript</h3>
+                <p>$22.99</p>
+            </div>
+            <div class="new-arrival-item">
+                <img class="new-arrival-cover" src="/new-arrivals/new-arrival4(nodeJs).jpeg" alt="New Arrival Book 4">
+                <h3>Simple way of Node.js</h3>
+                <p>$19.99</p>
+            </div>
+        </div>
+        <a href="#" class="view-all-new-arrivals">View All New Arrivals</a>
+    </div>
+</section>
+
+<!-- ************************************************************ -->
+
+<section class="most-selling-books">
+    <h2>Most Selling Books</h2>
+    <div class="book-grid">
+        <div class="book-card">
+            <img src="most-sell-books-img/cyber1.jpeg" alt="Book 1 Cover" class="book-cover">
+            <div class="book-info">
+                <span class="book-name">Cyber & security attacks(Aditionm 10)</span>
+            </div>
+            <button class="view-btn">View</button>
+        </div>
+        <div class="book-card">
+            <img src="most-sell-books-img/network-security-1.webp" alt="Book 2 Cover" class="book-cover">
+            <div class="book-info">
+                <span class="book-name">Network & security</span>
+            </div>
+            <button class="view-btn">View</button>
+        </div>
+        <div class="book-card">
+            <img src="most-sell-books-img/cyber-attacks1.jpeg" alt="Book 3 Cover" class="book-cover">
+            <div class="book-info">
+                <span class="book-name">Understanding of Attacks</span>
+            </div>
+            <button class="view-btn">View</button>
+        </div>
+        <!-- Add more book cards as needed -->
+    </div>
+</section>
+
+
+    <!-- Parallax Effect for Book Listings -->
+    <section class="book-listings parallax">
+        <h2>Featured Books</h2>
+        <div class="book-grid">
+            <div class="book-item">
+                <img src="cover-page-book/book1.jpg" alt="Book 1">
+                <p>Book Title 1</p>
+                <p>$19.99</p>
+            </div>
+            <div class="book-item">
+                <img src="cover-page-book/book2.jpeg" alt="Book 2">
+                <p>Book Title 2</p>
+                <p>$24.99</p>
+            </div>
+            <div class="book-item">
+                <img src="cover-page-book/book3.jpg" alt="Book 3">
+                <p>Book Title 3</p>
+                <p>$14.99</p>
+            </div>
+            <div class="book-item">
+                <img src="cover-page-book/book1.jpg" alt="Book 4">
+                <p>Book Title 4</p>
+                <p>$29.99</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
