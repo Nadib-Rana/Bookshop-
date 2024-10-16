@@ -5,24 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unique Book Sales Website</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- For header navigation -->
+    <link rel="stylesheet" href="/Bookshop-/CommonFile/navigation/index.css">
 </head>
 <body>
-    <!-- Navbar -->
-   <!-- header.html -->
-<link rel="stylesheet" href="header.css">
-<header>
-    <section style="width: 100%;height: 40px;background-color: green;" class="logo-name-scerch">
-        <ul>
-          <li class="listyles" id="logo"><img class="logo-MEdu" src="logo/image.png" alt="logo"></li>
-          <li class="listyles" id="search-box">
-            <input type="text" placeholder="search..." class="search" id="search" />
-          </li>
-          <li class="listyles" class="name" style="padding-right: 15px">mEdu</li>
-        </ul>
-      </section>
-</header>
-
-
+   
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+      <a href="#home">BookShop</a>
+    </div>
+  
+    <!-- Fullscreen Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" placeholder="Search books..." class="search-input" />
+      <button type="submit" class="search-btn">🔍</button>
+    </div>
+  
+    <!-- User Authentication -->
+    <ul class="auth-links">
+      <li><a href="/Bookshop-/CommonFile/Login/log_in.html">Log In</a></li>
+      <li><a href="#">Log Out</a></li>
+    </ul>
+  
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  
+    <!-- Mobile Navigation Links (Hidden by default) -->
+    <div class="mobile-nav" id="mobileMenu">
+      <ul class="mobile-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login">Log In</a></li>
+        <li><a href="#logout">Log Out</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Page Content -->
+  <div class="content">
+    <!-- Add your content here -->
+  </div>
+  
+  <script>
+    // Function to toggle the mobile navigation menu
+    function toggleMenu() {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("active");
+    }
+  </script>
+  
     <!-- Dynamic Book Showcase Banner -->
     <section class="dynamic-banner">
         <div class="book-info">
@@ -31,7 +77,7 @@
             <button class="cta-button">Browse Collection</button>
         </div>
         <div class="book-carousel">
-            <img src="/cover-page-book/book1.jpg" alt="Featured Book 1" class="carousel-item">
+            <img src="cover-page-book/book1.jpg" alt="Featured Book 1" class="carousel-item">
             <img src="cover-page-book/book2.jpeg" alt="Featured Book 2" class="carousel-item">
             <img src="cover-page-book/book3.jpg" alt="Featured Book 3" class="carousel-item">
         </div>
@@ -74,7 +120,7 @@
                 <p>$15.99</p>
             </div>
             <div class="new-arrival-item">
-                <img class="new-arrival-cover" src="/new-arrivals/new-arrival2.png" alt="New Arrival Book 2">
+                <img class="new-arrival-cover" src="new-arrivals/new-arrival2.png" alt="New Arrival Book 2">
                 <h3>Dream Town </h3>
                 <p>$18.99</p>
             </div>
@@ -150,8 +196,6 @@
             </div>
         </div>
     </section>
-
-
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #3a3a3a, #1d1d1d);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  /* Logo */
+  .logo a {
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Navigation Links */
+  .nav-links,
+  .auth-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li,
+  .auth-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links li a,
+  .auth-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links li a:hover,
+  .auth-links li a:hover {
+    color: #ff8800;
+  }
+  
+  /* Search Container */
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    outline: none;
+    color: #333;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  
+  .search-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #ff8800;
+    margin-left: -30px;
+    cursor: pointer;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile Navigation Menu (Hidden by default) */
+  .mobile-nav {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .mobile-nav ul {
+    list-style: none;
+  }
+  
+  .mobile-nav ul li {
+    padding: 15px 0;
+  }
+  
+  .mobile-nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  /* Active Mobile Menu */
+  .mobile-nav.active {
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links,
+    .auth-links {
+      display: none;
+    }
+  
+    .search-input {
+      width: 100px;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
