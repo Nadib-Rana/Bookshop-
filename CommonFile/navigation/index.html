@@ -1,0 +1,61 @@
+
+<link rel="stylesheet" href="index.css">
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+      <a href="#home">BookShop</a>
+    </div>
+  
+    <!-- Fullscreen Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" placeholder="Search books..." class="search-input" />
+      <button type="submit" class="search-btn">🔍</button>
+    </div>
+  
+    <!-- User Authentication -->
+    <ul class="auth-links">
+      <li><a href="#login">Log In</a></li>
+      <li><a href="#logout">Log Out</a></li>
+    </ul>
+  
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  
+    <!-- Mobile Navigation Links (Hidden by default) -->
+    <div class="mobile-nav" id="mobileMenu">
+      <ul class="mobile-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login">Log In</a></li>
+        <li><a href="#logout">Log Out</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Page Content -->
+  <div class="content">
+    <!-- Add your content here -->
+  </div>
+  
+  <script>
+    // Function to toggle the mobile navigation menu
+    function toggleMenu() {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("active");
+    }
+  </script>
+  

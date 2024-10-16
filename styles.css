@@ -201,10 +201,10 @@ body {
     transform: scale(1.1);
 }
 
-.fiction { background-image: url('/bacground-img/fiction.jpeg'); background-size: cover; }
-.non-fiction { background-image: url('/bacground-img/non-fiction.jpeg'); background-size: cover; }
-.mystery { background-image: url('/bacground-img/mystery.jpeg'); background-size: cover; }
-.sci-fi { background-image: url('/bacground-img/science-fiction.jpeg'); background-size: cover; }
+.fiction { background-image: url('bacground-img/fiction.jpeg'); background-size: cover; }
+.non-fiction { background-image: url('bacground-img/non-fiction.jpeg'); background-size: cover; }
+.mystery { background-image: url('bacground-img/mystery.jpeg'); background-size: cover; }
+.sci-fi { background-image: url('bacground-img/science-fiction.jpeg'); background-size: cover; }
 
 /* Parallax Effect for Book Listings */
 .parallax {
@@ -425,18 +425,6 @@ h2 {
 .book-card:hover .book-name {
     opacity: 0; /* Hide the book name by changing its opacity */
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ********************************************************************************************** */
