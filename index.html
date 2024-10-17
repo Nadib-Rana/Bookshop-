@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unique Book Sales Website</title>
+    
+   <!-- ========================== font-awesome=========================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Monoton">
+
+    <!--===================== CSS ================== -->
     <link rel="stylesheet" href="styles.css">
-    <!-- For header navigation -->
     <link rel="stylesheet" href="/Bookshop-/CommonFile/navigation/index.css">
+    <!-- <link rel="stylesheet" href="/Bookshop-/CommonFile/Registration/Registration.css"> -->
+
+<!-- ============load file/js file================  -->
+<script src="script.js">
+</script>
 </head>
 <body>
    
@@ -33,7 +43,12 @@
     <!-- User Authentication -->
     <ul class="auth-links">
       <li><a href="/Bookshop-/CommonFile/Login/log_in.html">Log In</a></li>
-      <li><a href="#">Log Out</a></li>
+      <li><a href="/Bookshop-/CommonFile/Registration/Registration.html">Registration</a></li>
+       <li>
+           <a href="#">
+              <i style="color: wheat;" class="fa-solid fa-cart-shopping"></i>
+            </a>
+       </li>
     </ul>
   
     <!-- Hamburger Menu for Mobile -->
@@ -50,25 +65,15 @@
         <li><a href="#shop">Shop</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#login">Log In</a></li>
+        <li><a href="/Bookshop-/CommonFile/Login/log_in.html">Log In</a>
+       
+            <div id="login-display"></div>
+        </li>
         <li><a href="#logout">Log Out</a></li>
       </ul>
     </div>
   </nav>
-  
-  <!-- Page Content -->
-  <div class="content">
-    <!-- Add your content here -->
-  </div>
-  
-  <script>
-    // Function to toggle the mobile navigation menu
-    function toggleMenu() {
-      const mobileMenu = document.getElementById("mobileMenu");
-      mobileMenu.classList.toggle("active");
-    }
-  </script>
-  
+
     <!-- Dynamic Book Showcase Banner -->
     <section class="dynamic-banner">
         <div class="book-info">
@@ -85,7 +90,7 @@
 
     <!-- Animated Book Categories -->
     <section class="categories">
-        <h2>Explore by Genre</h2>
+        <h2 class="Explore-by-Genre">Explore by Genre</h2>
         <div class="category-container">
             <div class="category fiction">
                 <div class="overlay"></div>
@@ -111,60 +116,89 @@
     <!-- New Arrivals Section -->
 <section class="new-arrivals-section">
     <div class="new-arrivals-container">
-        <h2>New Arrivals</h2>
+        <h2 class="new-arrival-titel">New Arrivals</h2>
         <p>Discover the latest books added to our collection. Fresh stories, just for you!</p>
         <div class="new-arrivals-grid">
             <div class="new-arrival-item">
                 <img class="new-arrival-cover" src="new-arrivals/new-arrival1.png" alt="New Arrival Book 1">
-                <h3>The Road of Mystery</h3>
+                <h4>The Road of Mystery</h4>
                 <p>$15.99</p>
+                <button class="btn-add-crad">Abb crad</button>
             </div>
+
+
             <div class="new-arrival-item">
                 <img class="new-arrival-cover" src="new-arrivals/new-arrival2.png" alt="New Arrival Book 2">
-                <h3>Dream Town </h3>
+                <h4>Dream Town </h4>
                 <p>$18.99</p>
+                <button class="btn-add-crad">Abb crad</button>
             </div>
+
+
+
             <div class="new-arrival-item">
                 <img class="new-arrival-cover" src="new-arrivals/new-arrival3(javascript).jpeg" alt="New Arrival Book 3">
-                <h3>Power of javascript</h3>
+                <h4>Power of javascript</h4>
                 <p>$22.99</p>
+                <button class="btn-add-crad">Abb crad</button>
             </div>
+            
+
             <div class="new-arrival-item">
-                <img class="new-arrival-cover" src="/new-arrivals/new-arrival4(nodeJs).jpeg" alt="New Arrival Book 4">
-                <h3>Simple way of Node.js</h3>
+                <img class="new-arrival-cover" src="new-arrivals/new-arrival4(nodeJs).jpeg" alt="New Arrival Book 4">
+                <h4>Node.js</h4>
                 <p>$19.99</p>
+                <button class="btn-add-crad">Abb crad</button>
             </div>
         </div>
         <a href="#" class="view-all-new-arrivals">View All New Arrivals</a>
     </div>
 </section>
 
-<!-- ************************************************************ -->
+<!-- **********Mos selling product********************** -->
 
 <section class="most-selling-books">
     <h2>Most Selling Books</h2>
     <div class="book-grid">
+        <!-- ============book-card 1=============== -->
         <div class="book-card">
             <img src="most-sell-books-img/cyber1.jpeg" alt="Book 1 Cover" class="book-cover">
             <div class="book-info">
                 <span class="book-name">Cyber & security attacks(Aditionm 10)</span>
             </div>
+            <button class="quick-view">Quick view</button>
             <button class="view-btn">View</button>
         </div>
+
+          <!-- ============ book-card 2 =============== -->
         <div class="book-card">
             <img src="most-sell-books-img/network-security-1.webp" alt="Book 2 Cover" class="book-cover">
             <div class="book-info">
                 <span class="book-name">Network & security</span>
             </div>
+            <button class="quick-view">Quick view</button>
             <button class="view-btn">View</button>
         </div>
+
+            <!-- ============book-card 3=============== -->
         <div class="book-card">
             <img src="most-sell-books-img/cyber-attacks1.jpeg" alt="Book 3 Cover" class="book-cover">
             <div class="book-info">
                 <span class="book-name">Understanding of Attacks</span>
             </div>
+            <button class="quick-view">Quick view</button>
             <button class="view-btn">View</button>
         </div>
+       <!-- ============book-card 4=============== -->
+        <div class="book-card">
+            <img src="most-sell-books-img/cyber-attacks1.jpeg" alt="Book 3 Cover" class="book-cover">
+            <div class="book-info">
+                <span class="book-name">Understanding of Attacks</span>
+            </div>
+            <button class="quick-view">Quick view</button>
+            <button class="view-btn">View</button>
+        </div>
+
         <!-- Add more book cards as needed -->
     </div>
 </section>
@@ -172,7 +206,7 @@
 
     <!-- Parallax Effect for Book Listings -->
     <section class="book-listings parallax">
-        <h2>Featured Books</h2>
+        <h2 class="Featured-Books">Featured Books</h2>
         <div class="book-grid">
             <div class="book-item">
                 <img src="cover-page-book/book1.jpg" alt="Book 1">
@@ -196,7 +230,9 @@
             </div>
         </div>
     </section>
-
     <script src="script.js"></script>
+
+    <!-- ==========Link of footer============ -->
+     <div id="footer"></div>
 </body>
 </html>

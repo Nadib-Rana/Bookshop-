@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Londrina+Sketch');
+@import url('https://fonts.google.com/share?selection.family=Londrina+Sketch|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900');
+
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -8,39 +12,6 @@ body {
 }
 
 /* Navbar */
-*{
-    padding: 0;
-    margin: 0;
-}
-
-/***logo-name-scerch*****/
-.listyles{
-    list-style: none;
-    align-items: center;
-}
-
-.logo-name-scerch ul{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-
-}
-#logo{
-
-    width: 40px;
-    height: 40px;
-    top: -2px;
-
-} 
-.logo-MEdu{
-    width: 40px;
-    height: 40px;
-    border-top-right-radius: 15px;
-    position: relative;
-    top: -4px;
-}
-
 /* ----------------------------Search---------------------------------------- */
 
 
@@ -98,6 +69,7 @@ body {
     font-size: 3rem;
     color: #333;
     align-items: center;
+    font-family: 'Monoton', cursive;
 
 }
 
@@ -155,6 +127,7 @@ body {
 .categories {
     padding: 2rem;
     text-align: center;
+    background: linear-gradient(45deg, #ff0099, #493240, #4facfe, #00f2fe);
 }
 
 .category-container {
@@ -196,7 +169,10 @@ body {
 .category:hover .overlay {
     opacity: 1;
 }
-
+.Explore-by-Genre{
+    color: rgb(67, 57, 39);
+    font-family: 'Londrina Sketch', cursive;
+}
 .category:hover {
     transform: scale(1.1);
 }
@@ -207,8 +183,15 @@ body {
 .sci-fi { background-image: url('bacground-img/science-fiction.jpeg'); background-size: cover; }
 
 /* Parallax Effect for Book Listings */
+
+.Featured-Books{
+    font-family: 'Courier New', Courier, monospace;
+    color: #06a944;
+}
+
+
 .parallax {
-    background-image: url('parallax-bg.jpg');
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #4facfe, #00f2fe);
     background-attachment: fixed;
     background-size: cover;
     padding: 3rem 0;
@@ -216,21 +199,30 @@ body {
 }
 
 .book-listings {
+    position: relative;
+    top: -200px;
     text-align: center;
+    background-color: #0e245a;
+
 }
 
 .book-grid {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
     display: grid;
+    background-color:#0e345a;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
 }
-
 .book-item {
-    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    width: 90%;
+    background-color:transparent;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(5, 5, 8, 0.8);
     transition: transform 0.3s ease;
+    align-items: center;
+    left: 5%;
 }
 
 .book-item:hover {
@@ -238,20 +230,67 @@ body {
 }
 
 .book-item img {
-    width: 100%;
+    width: 70%;
     height: 200px;
     object-fit: cover;
 }
-
-
 
 /* ************************************************************************** */
 
 /* New Arrivals Section */
 .new-arrivals-section {
-    background-color: #fffaf0;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #4facfe, #00f2fe);
+    background-size: 400% 400%;
+    animation: magicBackground 15s ease infinite;
     padding: 4rem 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animation for the magical gradient background */
+  @keyframes magicBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Optional: Adding a subtle sparkle effect */
+  .new-arrivals-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.2;
+    animation: sparkle 5s linear infinite;
+  }
+  
+  @keyframes sparkle {
+    0% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+  
+
+.new-arrival-titel{
+    color: #3e345a;
+    font-family: 'Londrina Sketch', cursive;
+    font-size: 3rem;
 }
 
 .new-arrivals-container {
@@ -278,21 +317,24 @@ body {
 }
 
 .new-arrival-item {
-    background-color: white;
+    width: 200px;
+    height: 280px;
+    background-color: transparent;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease;
+    border: 1px solid black;
 }
 
-.new-arrival-item:hover {
-    transform: translateY(-5px);
-}
+
+
+
 
 .new-arrival-item img {
-    width: 100%;
-    height: 250px;
+    width: 80%;
+    height: 50%;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -313,11 +355,43 @@ body {
     display: inline-block;
     margin-top: 2rem;
     padding: 0.8rem 2rem;
-    background-color: #ff6f61;
+    background: linear-gradient(45deg, #ff6f61, #ff0077, #ffcb69, #4facfe);
+    background-size: 200% 200%;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Initial shadow */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated background and glow effect on hover */
+.view-all-new-arrivals:hover {
+    background-position: right center;
+    background-size: 300% 300%;
+    box-shadow: 0 6px 20px rgba(255, 111, 97, 0.6); /* Glowing shadow */
+    transform: scale(1.05); /* Slight scaling on hover */
+    color: #06a944;
+}
+
+/* Glowing effect around the button */
+.view-all-new-arrivals::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, transparent 60%);
+    opacity: 0.5;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Hover effect for the glowing ring */
+.view-all-new-arrivals:hover::before {
+    transform: scale(1.2);
+    opacity: 0.9;
 }
 
 .view-all-new-arrivals:hover {
@@ -327,13 +401,24 @@ body {
 
 .new-arrival-cover{
     transform-origin: left; /* Make the transformation start from the left side */
-    transition: transform 0.5s ease; /* Smooth transition effect */
+    transition: transform 1s ease; /* Smooth transition effect */
 }
 .new-arrival-cover:hover {
-    transform: perspective(300px) rotateY(-16deg) scale(0.88); /* 3D "open door" effect */
-    box-shadow: 20px 0px 10px rgba(60, 218, 21, 0.3); /* Shadow to the left */
+    transform: perspective(300px) rotateY(-2deg) scale(0.95); /* 3D "open door" effect */
+    box-shadow: 20px 0px 10px rgba(50, 59, 48, 0.3); /* Shadow to the left */
 }
 
+
+.btn-add-crad{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: linear-gradient(to top, #7889b3 30%, #ffffff 50%);
+    
+}
+
+.btn-add-crad:hover{
+    border: 2px solid #0e245a;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -348,10 +433,15 @@ body {
 
 /* ***************************************************************************************** */
 .most-selling-books {
+    position: relative;
+    top:-100px;
     width: 90%;
     margin: 40px auto;
     text-align: center;
-}
+    background: linear-gradient(to top, #0e245a 40%, #ffffff 30%);
+     padding: 40px 0;
+  }
+  
 
 h2 {
     font-size: 2.5rem;
@@ -362,13 +452,15 @@ h2 {
 .book-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 
 .book-card {
     position: relative;
-    background-color: white;
-    padding: 20px;
+    background-color: transparent;
+    padding: 5px;
+    height: 220px;
+    width: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -376,13 +468,12 @@ h2 {
 }
 
 .book-card:hover {
-    transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .book-cover {
-    width: 100%;
-    height: 300px;
+    width: 56%;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -390,17 +481,50 @@ h2 {
 .book-info {
     margin-top: 15px;
     text-align: center;
+
 }
 
 .book-name {
     font-weight: bold;
     font-size: 1.2rem;
     display: block;
-    color: #333;
-    margin-bottom: 10px;
+    color:whitesmoke;
+    margin-bottom: 0px 0px 20px 0px;
     transition: opacity 0.3s ease; /* Add transition for smooth effect */
     
 }
+
+
+
+.quick-view {
+    position: relative;
+    left: 26.8%;
+    scroll-behavior: smooth;
+    padding: 10px 20px;
+    color: rgb(202, 184, 219);
+    transition: all 0.3s ease;
+    display: none;
+    background-color: transparent;
+  }
+  
+  .book-card:hover .quick-view {
+    display: block;
+    animation-name: quick-move;
+    animation: quick-move 1s ease-in-out forwards; /* Activate animation on hover */
+  }
+  
+  /* Keyframe for the 'quick-move' animation */
+  @keyframes quick-move {
+    0% {
+      top: 10px; /* Starting point */
+      opacity: 0;
+    }
+    100% {
+      top: -70px;
+      opacity: 1;
+    }
+  }
+  
 
 .view-btn {
     display: none;
@@ -422,65 +546,13 @@ h2 {
     display: block;
 }
 
+
+
 .book-card:hover .book-name {
     opacity: 0; /* Hide the book name by changing its opacity */
 }
-
-
-/* ********************************************************************************************** */
-#footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+/* *****************************footer***************************************************************** */
+#footer{
     position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.footer-section {
-    flex: 1;
-    padding: 10px;
-}
-
-.footer-section .h2tag{
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.footer-section p,
-.footer-section ul,
-.footer-section li,
-.footer-section a {
-    color: #ccc;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.footer-section a:hover {
-    color: #fff;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding: 10px;
-    background: #222;
-    color: #ccc;
-}
-
-.footer-bottom a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-bottom a:hover {
-    color: #ccc;
+    top: -200px;
 }
