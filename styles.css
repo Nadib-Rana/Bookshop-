@@ -551,6 +551,31 @@ h2 {
 .book-card:hover .book-name {
     opacity: 0; /* Hide the book name by changing its opacity */
 }
+
+
+.shopping-card{
+    font-size: 20px;
+    position: relative;
+    color: #4CAF50;
+    display: none;
+}
+
+.book-item:hover .shopping-card {
+display: block;
+direction: 1s;
+transform: scale(1.3);
+}
+
+.book-item:hover  p{
+    display: none;
+}
+.buy-now:hover{
+background-color: #06a944;
+border: none;
+padding: 2px;
+border: 2px solid gray;
+border-radius: 2px;
+}
 /* *****************************footer***************************************************************** */
 #footer{
     position: relative;
