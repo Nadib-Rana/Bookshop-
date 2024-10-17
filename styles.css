@@ -12,39 +12,6 @@ body {
 }
 
 /* Navbar */
-*{
-    padding: 0;
-    margin: 0;
-}
-
-/***logo-name-scerch*****/
-.listyles{
-    list-style: none;
-    align-items: center;
-}
-
-.logo-name-scerch ul{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-
-}
-#logo{
-
-    width: 40px;
-    height: 40px;
-    top: -2px;
-
-} 
-.logo-MEdu{
-    width: 40px;
-    height: 40px;
-    border-top-right-radius: 15px;
-    position: relative;
-    top: -4px;
-}
-
 /* ----------------------------Search---------------------------------------- */
 
 
@@ -362,12 +329,7 @@ body {
 }
 
 
-.new-arrival-item:hover .btn-add-crad{
-    display: block;
-    align-content: center;
-    text-align:center;
-    
-}
+
 
 
 .new-arrival-item img {
@@ -432,22 +394,6 @@ body {
     opacity: 0.9;
 }
 
-
-.btn-add-crad{
-    display: none; 
-    position: relative;
-    padding: 5px 54px;
-    background-color: transparent;
-    border-radius: 5px;
-    border: 2px solid rgb(240, 204, 204);
-    z-index: 100;
-}
-
-.btn-add-crad:hover{
-    background-color: #06a944;
-    transition: 1s;
-}
-
 .view-all-new-arrivals:hover {
     background-color: #e04b45;
 }
@@ -462,6 +408,17 @@ body {
     box-shadow: 20px 0px 10px rgba(50, 59, 48, 0.3); /* Shadow to the left */
 }
 
+
+.btn-add-crad{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: linear-gradient(to top, #7889b3 30%, #ffffff 50%);
+    
+}
+
+.btn-add-crad:hover{
+    border: 2px solid #0e245a;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -482,7 +439,7 @@ body {
     margin: 40px auto;
     text-align: center;
     background: linear-gradient(to top, #0e245a 40%, #ffffff 30%);
-    padding: 40px 0;
+     padding: 40px 0;
   }
   
 
