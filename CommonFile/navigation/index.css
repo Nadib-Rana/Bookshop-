@@ -7,7 +7,7 @@
   
   /* Navbar Styling */
   .navbar {
-    background-color: #1d1d1d;
+    background-color: #646161;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +16,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+
   }
   /* Logo */
   .logo a {
@@ -28,37 +29,78 @@
   
   /* Navigation Links */
   .nav-links,
-  .auth-links {
+.auth-links {
     list-style: none;
     display: flex;
-  }
-  
-  .nav-links li,
-  .auth-links li {
+}
+
+.nav-links li,
+.auth-links li {
     margin-left: 20px;
-  }
-  
-  .nav-links li a,
-  .auth-links li a {
+}
+
+.nav-links li a,
+.auth-links li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
     transition: all 0.3s ease;
-  }
+}
+
+.nav-links li a:hover,
+.auth-links li a:hover {
+    color: #90EE90;
+    position: relative;
+}
+
+.nav-links li a::after,
+.auth-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: #F08080;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out; /* Smooth width transition */
+}
+
+.nav-links li a:hover::after,
+.auth-links li a:hover::after {
+    width: 100%; /* Fully expands the underline on hover */
+    animation: under 1s forwards; /* Applies the keyframes animation */
+}
+
+@keyframes under {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
   
-  .nav-links li a:hover,
-  .auth-links li a:hover {
-    color: #ff8800;
-  }
   
   /* Search Container */
   .search-container {
     display: flex;
     align-items: center;
-  }
-  
-  .search-input {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-container:hover {
+    background-color: #444;
+    box-shadow: 0 0 20px #90EE90, 0 0 40px #90EE90, 0 0 60px #F08080;
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.search-input {
     padding: 8px;
     border-radius: 25px;
     border: 1px solid #fff;
@@ -66,16 +108,40 @@
     color: #333;
     font-size: 14px;
     background-color: #fff;
-  }
-  
-  .search-btn {
+    transition: box-shadow 0.5s ease;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 15px #90EE90, 0 0 30px #90EE90; /* Glowing effect on focus */
+}
+
+.search-btn {
     background: none;
     border: none;
     font-size: 18px;
     color: #ff8800;
     margin-left: -30px;
     cursor: pointer;
-  }
+    transition: color 0.5s ease;
+    animation: pulse 1s infinite;
+}
+
+.search-btn:hover {
+    color: #b5ddb5; /* Change button color on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
   
   /* Hamburger Menu */
   .hamburger {

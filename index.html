@@ -8,11 +8,15 @@
    <!-- ========================== font-awesome=========================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Monoton">
+
     <!--===================== CSS ================== -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/Bookshop-/CommonFile/navigation/index.css">
+    <!-- <link rel="stylesheet" href="/Bookshop-/CommonFile/Registration/Registration.css"> -->
 
-
+<!-- ============load file/js file================  -->
+<script src="script.js">
+</script>
 </head>
 <body>
    
@@ -39,7 +43,7 @@
     <!-- User Authentication -->
     <ul class="auth-links">
       <li><a href="/Bookshop-/CommonFile/Login/log_in.html">Log In</a></li>
-      <li><a href="#">Log Out</a></li>
+      <li><a href="/Bookshop-/CommonFile/Registration/Registration.html">Registration</a></li>
        <li>
            <a href="#">
               <i style="color: wheat;" class="fa-solid fa-cart-shopping"></i>
@@ -61,25 +65,15 @@
         <li><a href="#shop">Shop</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#login">Log In</a></li>
+        <li><a href="/Bookshop-/CommonFile/Login/log_in.html">Log In</a>
+       
+            <div id="login-display"></div>
+        </li>
         <li><a href="#logout">Log Out</a></li>
       </ul>
     </div>
   </nav>
-  
-  <!-- Page Content -->
-  <div class="content">
-    <!-- Add your content here -->
-  </div>
-  
-  <script>
-    // Function to toggle the mobile navigation menu
-    function toggleMenu() {
-      const mobileMenu = document.getElementById("mobileMenu");
-      mobileMenu.classList.toggle("active");
-    }
-  </script>
-  
+
     <!-- Dynamic Book Showcase Banner -->
     <section class="dynamic-banner">
         <div class="book-info">
@@ -237,5 +231,8 @@
         </div>
     </section>
     <script src="script.js"></script>
+
+    <!-- ==========Link of footer============ -->
+     <div id="footer"></div>
 </body>
 </html>

@@ -360,6 +360,8 @@ body {
     transition: transform 0.3s ease;
     border: 1px solid black;
 }
+
+
 .new-arrival-item:hover .btn-add-crad{
     display: block;
     align-content: center;
@@ -434,11 +436,11 @@ body {
 .btn-add-crad{
     display: none; 
     position: relative;
-    top: -30px;
     padding: 5px 54px;
     background-color: transparent;
     border-radius: 5px;
     border: 2px solid rgb(240, 204, 204);
+    z-index: 100;
 }
 
 .btn-add-crad:hover{
@@ -551,9 +553,7 @@ h2 {
   .book-card:hover .quick-view {
     display: block;
     animation-name: quick-move;
-    animation-delay: 5ms;
-    animation-duration: 5s;
-    animation: quick-move 2s ease-in-out forwards; /* Activate animation on hover */
+    animation: quick-move 1s ease-in-out forwards; /* Activate animation on hover */
   }
   
   /* Keyframe for the 'quick-move' animation */
@@ -594,6 +594,8 @@ h2 {
 .book-card:hover .book-name {
     opacity: 0; /* Hide the book name by changing its opacity */
 }
-
-
-/* ********************************************************************************************** */
+/* *****************************footer***************************************************************** */
+#footer{
+    position: relative;
+    top: -200px;
+}
