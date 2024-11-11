@@ -347,4 +347,54 @@ This table covers the essential phases, tasks, and durations for a smooth projec
            +-----------------------------+
 ```
 
+### Workflow Diagram
+
+
+           +-----------------------------+
+           |       User Interface        |
+           |      (React Frontend)       |
+           +-------------|---------------+
+                         |
+                         v
+           +-----------------------------+
+           |   API Request from Client   |
+           +-----------------------------+
+                         |
+                         v
+           +-----------------------------+
+           |   Application Layer (API)   |
+           |   (Node.js + Express.js)    |
+           | - Receives API request      |
+           | - Applies business logic    |
+           | - Processes authentication  |
+           | - Routes to database        |
+           +-------------|---------------+
+                         |
+                         v
+           +-----------------------------+
+           |         Database Layer      |
+           |      (MongoDB / MySQL)      |
+           | - Stores and retrieves data |
+           | - Processes CRUD operations |
+           +-------------|---------------+
+                         |
+                         v
+           +-----------------------------+
+           |  Sends Response to Backend  |
+           +-----------------------------+
+                         |
+                         v
+           +-----------------------------+
+           |  Application Layer (API)    |
+           | - Formats response data     |
+           | - Sends response back to UI |
+           +-------------|---------------+
+                         |
+                         v
+           +-----------------------------+
+           |  User Interface (React)     |
+           | - Renders response data     |
+           | - Updates UI as needed      |
+           +-----------------------------+
+
 
