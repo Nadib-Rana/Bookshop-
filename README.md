@@ -1,105 +1,107 @@
-### **Functional Requirements:**
+---
 
-1. **User Authentication & Authorization:**
-   - User registration and login (email, password, and/or social media login).
-   - User profile management (update details, view order history).
-   - Admin panel for managing books, orders, and users.
-
-2. **Book Catalog:**
-   - Display a list of books with titles, authors, categories, prices, and cover images.
-   - Book details page with description, reviews, ratings, and availability.
-
-3. **Search and Filters:**
-   - Search bar to search books by title, author, or keyword.
-   - Filters for category, author, price range, rating, and availability.
-
-4. **Shopping Cart:**
-   - Ability to add books to the cart.
-   - View cart with the option to update quantity or remove books.
-   - Display of total price, taxes, and any discounts.
-
-5. **Checkout & Payment:**
-   - A checkout page to enter shipping information.
-   - Integration with payment gateways (Stripe, PayPal, etc.).
-   - Order summary and confirmation email after purchase.
-
-6. **Order Management:**
-   - Users can view their order history and track the status.
-   - Admin can view all orders, change order status (pending, shipped, delivered), and manage stock.
-
-7. **Reviews and Ratings:**
-   - Users can submit reviews and ratings for books.
-   - Admin approval for reviews before they are published.
-
-8. **Responsive Design:**
-   - Mobile and tablet compatibility.
-   - Clean and user-friendly design, with easy navigation.
-
-9. **Admin Dashboard:**
-   - Admin panel to add, edit, or delete books.
-   - Manage user accounts and view activity.
-   - View sales statistics and order reports.
-
-10. **Discounts and Coupons:**
-   - Apply discount codes or promotions at checkout.
-   - Option for limited-time offers or sales.
-
-### **Non-Functional Requirements:**
-
-1. **Performance:**
-   - The website should load quickly (within 2-3 seconds).
-   - Optimize images for faster page load times.
-
-2. **Security:**
-   - SSL certificates for secure transactions.
-   - Password encryption for user authentication.
-   - Protection against common attacks like SQL injection, CSRF, and XSS.
-
-3. **Scalability:**
-   - The website should be scalable to handle an increasing number of users and books.
-   - The database design should support growth.
-
-4. **Backup & Recovery:**
-   - Regular backups of the database (books, orders, and users).
-   - Disaster recovery plan for data loss prevention.
-
-5. **SEO & Accessibility:**
-   - SEO-friendly URLs, meta tags, and keywords for better search engine ranking.
-   - Accessible for people with disabilities (WCAG standards).
-
-### **Technology Stack Suggestions:**
-
-1. **Frontend:**
-   - HTML5, CSS3, JavaScript (React, Vue, or Angular).
-   - Responsive design with media queries.
-   - Integration with external libraries like Bootstrap for UI components.
-
-2. **Backend:**
-   - Node.js with Express.js (or PHP if preferred).
-   - Database: MongoDB (NoSQL) or MySQL (SQL).
-   - Authentication: JWT or OAuth.
-
-3. **Payment Integration:**
-   - Stripe, PayPal, or Razorpay for secure online transactions.
-
-4. **Admin Dashboard:**
-   - Use tools like AdminLTE, or build a custom dashboard using React or Vue.
-
-5. **Hosting:**
-   - Host on platforms like AWS, DigitalOcean, or Netlify for the frontend, and Heroku or AWS for the backend.
-
-### **Additional Features (Optional):**
-
-1. **Book Recommendations:**
-   - Based on user preferences or popular books.
-   
-2. **Wishlist:**
-   - Users can save books to a wishlist for later purchase.
-
-3. **Blog Section:**
-   - For book reviews, author interviews, and literary articles.
-
-4. **Newsletter Subscription:**
-   - Option to subscribe to newsletters for updates, new releases, and offers.
+### 📚 **Online Bookshop Website Requirements**
 
 ---
+
+#### **Functional Requirements**
+
+1. **👤 User Authentication & Authorization**
+   - **🔑 Login/Sign-Up** (email, password, social media)
+   - **👥 Profile Management**: Update details, view order history
+   - **🔧 Admin Panel**: Manage books, orders, users
+
+2. **📖 Book Catalog**
+   - **📚 Book Listing**: Title, author, category, price, cover image
+   - **🔍 Book Details Page**: Description, reviews, ratings, availability
+
+3. **🔎 Search and Filters**
+   - **🔍 Search Bar**: Search by title, author, or keywords
+   - **🧩 Filters**: Category, author, price range, rating, availability
+
+4. **🛒 Shopping Cart**
+   - **🛍 Add to Cart**: Add and view selected books
+   - **➕ Update Quantity** / **❌ Remove Items**
+   - **💰 Total Display**: Price, taxes, discounts
+
+5. **💳 Checkout & Payment**
+   - **📦 Checkout Page**: Enter shipping information
+   - **💵 Payment Gateways**: Stripe, PayPal integration
+   - **📧 Order Confirmation**: Order summary email
+
+6. **📦 Order Management**
+   - **📝 Order History**: Users can track orders
+   - **👨‍💻 Admin Control**: View all orders, manage stock
+
+7. **⭐ Reviews & Ratings**
+   - **📝 Submit Review**: Users rate and review books
+   - **👀 Admin Approval**: Review approval for quality
+
+8. **📱 Responsive Design**
+   - **📲 Mobile-Friendly**: Compatibility for all devices
+   - **👀 User-Friendly Design**: Clean layout and navigation
+
+9. **📊 Admin Dashboard**
+   - **📂 Book Management**: Add/edit/delete books
+   - **📊 Sales Reports**: View sales statistics, order reports
+   - **🔐 Manage Users**: Admin control for user management
+
+10. **🎉 Discounts & Coupons**
+    - **💸 Apply Discount Codes** at checkout
+    - **⏳ Limited Time Offers** or seasonal sales
+
+---
+
+#### **Non-Functional Requirements**
+
+1. **⚡ Performance**
+   - **🚀 Fast Loading**: Optimize for quick load times
+
+2. **🔒 Security**
+   - **🔐 Secure Transactions**: SSL encryption, secure payment
+   - **🛡 Protection Against Attacks**: SQL injection, XSS, CSRF
+
+3. **📈 Scalability**
+   - **📈 Growth-Ready**: Scalable to handle more users/books
+
+4. **💾 Backup & Recovery**
+   - **💽 Regular Backups** for database security
+   - **📤 Recovery Plan** in case of data loss
+
+5. **🌐 SEO & Accessibility**
+   - **🔗 SEO-Friendly** URLs, keywords, meta tags
+   - **♿ Accessibility Standards**: WCAG compliance
+
+---
+
+#### **Technology Stack Suggestions**
+
+1. **🎨 Frontend**:
+   - **🌐 HTML, CSS, JavaScript** (React, Vue, or Angular)
+   - **📱 Responsive Design** using Bootstrap or custom CSS
+
+2. **💻 Backend**:
+   - **⚙️ Node.js** with Express.js
+   - **🗄 Database**: MongoDB or MySQL
+
+3. **💸 Payment Integration**:
+   - **💳 Stripe, PayPal** for secure transactions
+
+4. **📊 Admin Dashboard**:
+   - **📋 AdminLTE or Custom UI** using React/Vue
+
+5. **☁️ Hosting**:
+   - **🌐 AWS, DigitalOcean, Netlify** for frontend
+   - **🚀 Heroku, AWS** for backend
+
+---
+
+#### **Additional Features (Optional)**
+
+1. **📚 Book Recommendations**: Based on user interests
+2. **❤️ Wishlist**: Save books for later
+3. **📝 Blog Section**: Reviews, author interviews, articles
+4. **📩 Newsletter Subscription**: Updates, new releases, and offers
+
+---
+
