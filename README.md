@@ -282,7 +282,36 @@ This table covers the essential phases, tasks, and durations for a smooth projec
 ![image](https://github.com/user-attachments/assets/7265b0c7-2a5a-490a-bdc4-4278a37d6180)
 
 
+### **Sorted Technology Stack**:
 
+1. **Frontend**:
+   - **HTML**, **CSS**, **JavaScript**
+   - **React.js** (for dynamic, fast UI)
+   - **Bootstrap** 
+
+2. **Backend**:
+   - **Node.js** with **Express.js** (for server-side logic and API creation)
+
+3. **Database**:
+   - **MongoDB** (for flexible, NoSQL data storage)
+   - Alternatively: **MySQL** (for structured, relational data storage)
+
+4. **Payment Processing**:
+   - **Stripe API** (for secure and easy payment handling)
+
+5. **Search Functionality**:
+   - **Algolia** or **Elasticsearch** (for fast, relevant search)
+
+6. **Authentication**:
+   - **JWT (JSON Web Tokens)** (for secure user login and registration)
+
+7. **Hosting**:
+   - **Vercel** or **Netlify** (for frontend deployment)
+   - **DigitalOcean** or **Heroku** (for backend deployment)
+
+8. **SEO Optimization**:
+   - **React Helmet** (for React-based SEO management)
+   - **Yoast SEO** (for WordPress-based sites)
 
 
 
