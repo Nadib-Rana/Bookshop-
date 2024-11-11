@@ -4,6 +4,46 @@
 
 ---
 
+Here’s a refined list of the main features for your online bookshop with suitable icons to enhance the visual appeal:
+
+### **Main Features for Online Bookshop**
+
+1. **User Features**
+   - 👤 **Account Creation & Login**
+   - 🔍 **Browse and Search Books**
+   - 📖 **View Book Details**
+   - 💖 **Add to Wishlist**
+   - 🛒 **Add to Cart**
+   - 💳 **Checkout Process**
+   - 🚚 **Order Tracking**
+   - ⭐ **Review and Ratings**
+
+2. **Admin Features**
+   - 📊 **Admin Dashboard**
+   - 📚 **Manage Book Inventory**
+   - 📦 **Order Management**
+   - 👥 **User Management**
+   - 📈 **Analytics & Reports**
+
+3. **Payment & Security Features**
+   - 💰 **Secure Payment Gateway Integration**
+   - 🔒 **SSL Encryption**
+   - 📩 **Order Confirmation**
+   - 🛡️ **Data Privacy Compliance**
+
+4. **Marketing Features**
+   - 🎟️ **Discount Codes & Promotions**
+   - 🤖 **Personalized Recommendations**
+   - 📧 **Email Notifications**
+   - 📲 **Social Sharing**
+
+5. **Additional Features**
+   - 📱 **Responsive Design**
+   - 🌐 **Multi-language Support**
+   - 🚀 **Search Engine Optimization (SEO)**
+   - 💬 **Customer Support**
+
+
 #### **Functional Requirements**
 
 1. **👤 User Authentication & Authorization**
