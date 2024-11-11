@@ -411,4 +411,64 @@ Here's a breakdown of the essential pages for your **Online Bookshop Website** a
 
 ---
 
+ **Use Case Diagram**
+```plaintext
+                     +--------------------------------------+
+                     |          Online Bookshop            |
+                     +--------------------------------------+
+                     |                                      |
+                     |  +------------------------------+    |
+                     |  |         User                 |    |
+                     |  +------------------------------+    |
+                     |       |           |                |
+                     |       |           |                |
+                     |       v           v                |
+                     |   +--------+   +--------+          |
+                     |   | Browse |   | Search |          |
+                     |   +--------+   +--------+          |
+                     |       |           |                |
+                     |       v           v                |
+                     |   +------------------------------+ |
+                     |   |      View Book Details       | |
+                     |   +------------------------------+ |
+                     |               |                    |
+                     |               v                    |
+                     |   +------------------------------+ |
+                     |   |       Add to Cart            | |
+                     |   +------------------------------+ |
+                     |               |                    |
+                     |               v                    |
+                     |   +------------------------------+ |
+                     |   |        Checkout             |  |
+                     |   +------------------------------+ |
+                     |               |                    |
+                     |               v                    |
+                     |   +------------------------------+ |
+                     |   |     Payment Gateway          | |
+                     |   +------------------------------+ |
+                     |               |                    |
+                     |               v                    |
+                     |   +------------------------------+ |
+                     |   |    Order Confirmation        | |
+                     |   +------------------------------+ |
+                     |               |                    |
+                     |               v                    |
+                     |   +------------------------------+ |
+                     |   |        Track Order           | |
+                     |   +------------------------------+ |
+                     |                                      |
+                     +--------------------------------------+
+```
+
+### **Explanation of Use Cases**
+
+1. **Browse**: Users can browse different book categories and genres.
+2. **Search**: Users can search for specific books by title, author, or keywords.
+3. **View Book Details**: Users can see detailed information about a selected book.
+4. **Add to Cart**: Users can add books to their cart for purchase.
+5. **Checkout**: Users proceed to checkout to review their cart and shipping details.
+6. **Payment Gateway**: Users are directed to a secure payment gateway to complete the purchase.
+7. **Order Confirmation**: After successful payment, users receive an order confirmation.
+8. **Track Order**: Users can track the status of their orders.
+
 
