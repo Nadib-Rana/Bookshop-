@@ -4,8 +4,6 @@
 
 ---
 
-Here’s a refined list of the main features for your online bookshop with suitable icons to enhance the visual appeal:
-
 ### **Main Features for Online Bookshop**
 
 1. **User Features**
