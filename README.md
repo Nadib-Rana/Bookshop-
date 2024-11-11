@@ -265,21 +265,7 @@ Here's a breakdown of the essential pages for your **Online Bookshop Website** a
 
 
 
- **Online Bookshop Project Plan**:
 
-| **Phase**                  | **Tasks**                                                         | **Duration** |
-|----------------------------|-------------------------------------------------------------------|--------------|
-| **Project Initiation**     | Define objectives, scope, requirements, communication setup       | 1 Week       |
-| **Requirement Analysis**   | Collect and prioritize requirements, define user roles            | 1-2 Weeks    |
-| **Design Phase**           | Create wireframes, UI/UX design, database schema, style guide     | 2 Weeks      |
-| **Development Phase**      | Frontend & backend development, payment integration, admin panel  | 6-8 Weeks    |
-| **Testing Phase**          | Unit, integration, user, security, and performance testing        | 2-3 Weeks    |
-| **Launch Preparation**     | Set up production server, optimize, backup, SEO                   | 1 Week       |
-| **Launch & Deployment**    | Deploy to live environment, monitor performance                   | 1 Day        |
-| **Post-Launch Support**    | Ongoing maintenance, bug fixes, feature updates                   | Ongoing      |
-
-This table covers the essential phases, tasks, and durations for a smooth project flow!
-![image](https://github.com/user-attachments/assets/7265b0c7-2a5a-490a-bdc4-4278a37d6180)
 
 
 ### **Sorted Technology Stack**:
@@ -396,5 +382,33 @@ This table covers the essential phases, tasks, and durations for a smooth projec
            | - Renders response data     |
            | - Updates UI as needed      |
            +-----------------------------+
+
+
+### **Gantt Chart for Online Bookshop Project**
+
+| Phase               | Task                        | Week 1 | Week 2 | Week 3 | Week 4 | Week 5 | Week 6 | Week 7 | Week 8 |
+|---------------------|-----------------------------|--------|--------|--------|--------|--------|--------|--------|--------|
+| **Planning**        | Requirements Gathering      | ██████ |        |        |        |        |        |        |        |
+|                     | Design Wireframes & Mockups | ██████ | ██████ |        |        |        |        |        |        |
+|                     | Technology Stack Selection  | ██████ |        |        |        |        |        |        |        |
+|                     | Finalize Project Plan       |        | ██████ |        |        |        |        |        |        |
+| **Frontend**        | Setup React Environment     |        | ██████ |        |        |        |        |        |        |
+|                     | Develop UI Components       |        | ██████ | ██████ |        |        |        |        |        |
+|                     | Implement State Management  |        |        | ██████ | ██████ |        |        |        |        |
+|                     | Integrate API Calls         |        |        |        | ██████ | ██████ |        |        |        |
+|                     | UI Testing                  |        |        |        |        | ██████ |        |        |        |
+| **Backend**         | Set up Node.js & Express    |        |        | ██████ |        |        |        |        |        |
+|                     | Develop API Endpoints       |        |        | ██████ | ██████ |        |        |        |        |
+|                     | Integrate Payment Gateway   |        |        |        | ██████ | ██████ |        |        |        |
+|                     | API Testing                 |        |        |        |        | ██████ |        |        |        |
+| **Database**        | Set Up Database             |        |        | ██████ |        |        |        |        |        |
+|                     | Configure Data Models       |        |        |        | ██████ | ██████ |        |        |        |
+|                     | Database Testing            |        |        |        |        | ██████ |        |        |        |
+| **Testing**         | Integration Testing         |        |        |        |        |        | ██████ | ██████ |        |
+|                     | User Acceptance Testing     |        |        |        |        |        |        | ██████ | ██████ |
+| **Deployment**      | Deploy on Server            |        |        |        |        |        |        |        | ██████ |
+|                     | Final Review & Launch       |        |        |        |        |        |        |        | ██████ |
+
+---
 
 
