@@ -119,7 +119,8 @@
 | **Post-Launch Support**    | Ongoing maintenance, bug fixes, feature updates                   | Ongoing      |
 
 This table covers the essential phases, tasks, and durations for a smooth project flow!
-![image](https://github.com/user-attachments/assets/0c44503c-b3fe-49d4-9c87-dc3765f6821d)
+![image](https://github.com/user-attachments/assets/7265b0c7-2a5a-490a-bdc4-4278a37d6180)
+
 
 
 
