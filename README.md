@@ -105,3 +105,20 @@
 
 ---
 
+ **Online Bookshop Project Plan**:
+
+| **Phase**                  | **Tasks**                                                         | **Duration** |
+|----------------------------|-------------------------------------------------------------------|--------------|
+| **Project Initiation**     | Define objectives, scope, requirements, communication setup       | 1 Week       |
+| **Requirement Analysis**   | Collect and prioritize requirements, define user roles            | 1-2 Weeks    |
+| **Design Phase**           | Create wireframes, UI/UX design, database schema, style guide     | 2 Weeks      |
+| **Development Phase**      | Frontend & backend development, payment integration, admin panel  | 6-8 Weeks    |
+| **Testing Phase**          | Unit, integration, user, security, and performance testing        | 2-3 Weeks    |
+| **Launch Preparation**     | Set up production server, optimize, backup, SEO                   | 1 Week       |
+| **Launch & Deployment**    | Deploy to live environment, monitor performance                   | 1 Day        |
+| **Post-Launch Support**    | Ongoing maintenance, bug fixes, feature updates                   | Ongoing      |
+
+This table covers the essential phases, tasks, and durations for a smooth project flow!
+
+
+
