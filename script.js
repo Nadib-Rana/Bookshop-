@@ -6,6 +6,7 @@ function toggleMenu() {
 }
 
 
+
 // ==============footer============
 function loadFooter() {
     fetch('footer.html')
