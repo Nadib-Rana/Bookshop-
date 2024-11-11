@@ -312,8 +312,39 @@ This table covers the essential phases, tasks, and durations for a smooth projec
 8. **SEO Optimization**:
    - **React Helmet** (for React-based SEO management)
    - **Yoast SEO** (for WordPress-based sites)
+  
 
 
 
+### Architecture Diagram
+
+```plaintext
+           +-----------------------------+
+           |      Presentation Layer     |
+           |     (React Application)     |
+           |                             |
+           | - User Interface            |
+           | - User Interactions         |
+           +-------------|---------------+
+                         |
+                         v
+           +-----------------------------+
+           |      Application Layer      |
+           |   (Node.js + Express.js)    |
+           |                             |
+           | - Business Logic            |
+           | - API Endpoints             |
+           | - Authentication & Payment  |
+           +-------------|---------------+
+                         |
+                         v
+           +-----------------------------+
+           |         Data Layer          |
+           |      (MongoDB or MySQL)     |
+           |                             |
+           | - Persistent Data Storage   |
+           | - Query Processing          |
+           +-----------------------------+
+```
 
 
